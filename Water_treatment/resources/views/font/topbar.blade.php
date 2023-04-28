@@ -1,3 +1,6 @@
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../css/style.css" rel="stylesheet">
 <div class="container-fluid border-bottom d-none d-lg-block">
     <div class="row gx-0">
         <div class="col-lg-4 text-center py-2">
