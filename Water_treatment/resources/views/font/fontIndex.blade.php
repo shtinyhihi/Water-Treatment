@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Envoiroment - Solution for your water</title>
+    <title>Giải Pháp Và Thiết Bị Hoàng Long</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -23,62 +23,34 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     {{-- {{asset('css/bootstrap.min.css')}} --}}
-    <!-- Template Stylesheet --> --
-    <link href="../css/style.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Topbar Start -->
-    <div class="container-fluid border-bottom d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-4 text-center py-2">
-                <div class="d-inline-flex align-items-center">
-                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Our Office</h6>
-                        <span>123 Street, New York, USA</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center border-start border-end py-2">
-                <div class="d-inline-flex align-items-center">
-                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Email Us</h6>
-                        <span>info@example.com</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center py-2">
-                <div class="d-inline-flex align-items-center">
-                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Call Us</h6>
-                        <span>+012 345 6789</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('font.topbar')
     <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
         <a href="index.html" class="navbar-brand ms-lg-5">
-            <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>Sustainable</h1>
+            <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>Hoàng Long</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <a href="product.html" class="nav-item nav-link">Product</a>
+                <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
+                <a href="service.html" class="nav-item nav-link">Tin Tức</a>
+                <a href="service.html" class="nav-item nav-link">Giải Pháp</a>
+                <a href="service.html" class="nav-item nav-link">Dịch Vụ</a>
+                <a href="product.html" class="nav-item nav-link">Sản Phẩm</a>
+                <a href="about.html" class="nav-item nav-link">Giới Thiệu</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
@@ -89,7 +61,7 @@
                         <a href="detail.html" class="dropdown-item">Blog Detail</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Contact <i class="bi bi-arrow-right"></i></a>
+
             </div>
         </div>
     </nav>
@@ -101,7 +73,7 @@
         <div class="container py-5">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="display-1 text-uppercase text-dark mb-lg-4">Pet Shop</h1>
+                    <h1 class="display-1 text-uppercase text-dark mb-lg-4">Giải Pháp </h1>
                     <h1 class="text-uppercase text-white mb-lg-4">Make Your Pets Happy</h1>
                     <p class="fs-4 text-white mb-lg-4">Dolore tempor clita lorem rebum kasd eirmod dolore diam eos kasd. Kasd clita ea justo est sed kasd erat clita sea</p>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
@@ -151,7 +123,7 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="border-start border-5 border-primary ps-5 mb-5">
-                        <h6 class="text-primary text-uppercase">About Us</h6>
+                        <h6 class="text-primary text-uppercase">Giới Thiệu</h6>
                         <h1 class="display-5 text-uppercase mb-0">We Keep Your Pets Happy All Time</h1>
                     </div>
                     <h4 class="text-body mb-4">Diam dolor diam ipsum tempor sit. Clita erat ipsum et lorem stet no labore lorem sit clita duo justo magna dolore</h4>
@@ -188,7 +160,7 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
-                <h6 class="text-primary text-uppercase">Services</h6>
+                <h6 class="text-primary text-uppercase">Dịch Vụ</h6>
                 <h1 class="display-5 text-uppercase mb-0">Our Excellent Pet Care Services</h1>
             </div>
             <div class="row g-5">
@@ -262,7 +234,7 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
-                <h6 class="text-primary text-uppercase">Products</h6>
+                <h6 class="text-primary text-uppercase">Sản Phẩm</h6>
                 <h1 class="display-5 text-uppercase mb-0">Products For Your Best Friends</h1>
             </div>
             <div class="owl-carousel product-carousel">
@@ -350,7 +322,7 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
-                <h6 class="text-primary text-uppercase">Pricing Plan</h6>
+                <h6 class="text-primary text-uppercase">Gói Dịch Vụ</h6>
                 <h1 class="display-5 text-uppercase mb-0">Competitive Pricing For Pet Services</h1>
             </div>
             <div class="row g-5">
@@ -388,7 +360,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="bg-light text-center pt-5">
+                    <div class="bg-light text-center pt-5 mt-lg-5">
                         <h2 class="text-uppercase">Standard</h2>
                         <h6 class="text-body mb-5">The Best Choice</h6>
                         <div class="text-center bg-dark p-4 mb-2">
@@ -457,6 +429,58 @@
         </div>
     </div>
     <!-- Pricing Plan End -->
+    <!-- Blog Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase">Tin Tức</h6>
+                <h1 class="display-5 text-uppercase mb-0">Latest Articles From Our Blog Post</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="blog-item">
+                        <div class="row g-0 bg-light overflow-hidden">
+                            <div class="col-12 col-sm-5 h-100">
+                                <img class="img-fluid h-100" src="img/blog-1.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-sm-7 h-100 d-flex flex-column justify-content-center">
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <small class="me-3"><i class="bi bi-bookmarks me-2"></i>Web Design</small>
+                                        <small><i class="bi bi-calendar-date me-2"></i>01 Jan, 2045</small>
+                                    </div>
+                                    <h5 class="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
+                                    <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
+                                    <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blog-item">
+                        <div class="row g-0 bg-light overflow-hidden">
+                            <div class="col-12 col-sm-5 h-100">
+                                <img class="img-fluid h-100" src="img/blog-2.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-sm-7 h-100 d-flex flex-column justify-content-center">
+                                <div class="p-4">
+                                    <div class="d-flex mb-3">
+                                        <small class="me-3"><i class="bi bi-bookmarks me-2"></i>Web Design</small>
+                                        <small><i class="bi bi-calendar-date me-2"></i>01 Jan, 2045</small>
+                                    </div>
+                                    <h5 class="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
+                                    <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
+                                    <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
 
 
     <!-- Team Start -->
@@ -591,58 +615,6 @@
     <!-- Testimonial End -->
 
 
-    <!-- Blog Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
-                <h6 class="text-primary text-uppercase">Latest Blog</h6>
-                <h1 class="display-5 text-uppercase mb-0">Latest Articles From Our Blog Post</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="blog-item">
-                        <div class="row g-0 bg-light overflow-hidden">
-                            <div class="col-12 col-sm-5 h-100">
-                                <img class="img-fluid h-100" src="img/blog-1.jpg" style="object-fit: cover;">
-                            </div>
-                            <div class="col-12 col-sm-7 h-100 d-flex flex-column justify-content-center">
-                                <div class="p-4">
-                                    <div class="d-flex mb-3">
-                                        <small class="me-3"><i class="bi bi-bookmarks me-2"></i>Web Design</small>
-                                        <small><i class="bi bi-calendar-date me-2"></i>01 Jan, 2045</small>
-                                    </div>
-                                    <h5 class="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
-                                    <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
-                                    <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="blog-item">
-                        <div class="row g-0 bg-light overflow-hidden">
-                            <div class="col-12 col-sm-5 h-100">
-                                <img class="img-fluid h-100" src="img/blog-2.jpg" style="object-fit: cover;">
-                            </div>
-                            <div class="col-12 col-sm-7 h-100 d-flex flex-column justify-content-center">
-                                <div class="p-4">
-                                    <div class="d-flex mb-3">
-                                        <small class="me-3"><i class="bi bi-bookmarks me-2"></i>Web Design</small>
-                                        <small><i class="bi bi-calendar-date me-2"></i>01 Jan, 2045</small>
-                                    </div>
-                                    <h5 class="text-uppercase mb-3">Dolor sit magna rebum clita rebum dolor</h5>
-                                    <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos dolor</p>
-                                    <a class="text-primary text-uppercase" href="">Read More<i class="bi bi-chevron-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
 
 
     <!-- Footer Start -->
